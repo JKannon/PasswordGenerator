@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1C1C1C;
+    font-family: 'Inter';
+    font-size: 14px;
+}
+#unpopulated_state {
+    width: 550px;
+    height: 550px;
+    margin: 64px auto;
+    background: #1F2937;
+    padding: 40px;
+}
+#heading{
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin: 20px 0 15px;
+}
+#color_header {
+    color: #10B981;
+}
+p{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #D5D4D8;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+#generate_pass_btn{
+    background: #10B981;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    border: none;   
+    margin-top: auto;
+}
+label{
+    color: #55F991;
+    font-size: 14px;
+    font-weight: bold;
+}
+input{
+    border-radius: 6px;
+    width: 50%;
+    
+}
+#generate_pass_btn i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+hr {
+    border: 1px solid #2F3E53;
+    margin: 30px 0;
+}
+.flex_section_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.flex_section_nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+.flex_item:nth-child(2){
+    width: 50px;
+    align-self: stretch
+}
+.half{
+    flex: auto;
+    width: calc(50% - 30px);
+}
+.half > div{
+    background: #273549;
+    border-radius: 6px; 
+    padding: 10px 20px;   
+    text-align: center 
+}
+#error_message{
+    padding: 15px;
+    margin-bottom: 25px;
+    background: #ff3333;
+    color: #660000;
+    font-weight: bold;
+    display: none;
+}
+.error_text{
+    color: #ff3333;    
+}
+.copy_password {
+    cursor: pointer;
+}

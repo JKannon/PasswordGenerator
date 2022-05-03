@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="unpopulated_state">
+            <h1 id="heading">Generate a<br><span id="color_header">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <br>
+            <br>
+            <div id="error_message">
+                <i class="fa-solid fa-circle-exclamation"></i> Please enter a valid number between 5 and 12.
+            </div>
+            <div class="flex_section_wrap">
+                <label class="flex_item">Choose Password Length:</label>
+                <input type="number" id="password_length"  class="flex_item" />
+                <button id="generate_pass_btn" class="flex_item" onclick="generatePassword();"><i class="fa-solid fa-bolt"></i> Generate passwords</button>
+            </div>
+            <hr>
+            <div id="password_section"> 
+                <div class="flex_section_wrap">
+                    <div class="half">
+                        <div id="password_1" class="passwords"><i class="fa-solid fa-ellipsis"></i></div>
+                    </div>
+                    <div class="half">
+                        <div id="password_2" class="passwords"><i class="fa-solid fa-ellipsis"></i></div>                        
+                    </div>
+                    <div class="half">
+                        <div id="password_3" class="passwords"><i class="fa-solid fa-ellipsis"></i></div>                        
+                    </div>
+                    <div class="half">
+                        <div id="password_4" class="passwords"><i class="fa-solid fa-ellipsis"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
